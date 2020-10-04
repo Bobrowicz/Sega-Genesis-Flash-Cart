@@ -1,0 +1,26 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP cart_edge_conn_side_A
+D Generic connector, single row, 01x32, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP cart_edge_conn_side_B
+D Generic connector, single row, 01x32, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP my_SST39SF040
+D 4 Mbit Multi-Purpose Flash
+K Flash, Memory
+$ENDCMP
+#
+$CMP my_SW_SP3T
+D Switch, three position, single pole triple throw, 3 position switch, SP3T
+K switch sp3t ON-ON-ON
+F ~
+$ENDCMP
+#
+#End Doc Library
