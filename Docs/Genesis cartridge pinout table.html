@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sega Genesis Cartridge Pinout</title>
+
+<style>
+	table {
+	  width:100%;
+	}
+	table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+	th, td {
+	  padding: 15px;
+	  text-align: left;
+	}
+	#t01 {
+  		width: 100%;
+	}
+	#t01 tr:nth-child(even) {
+	  background-color: #eee;
+	}
+	#t01 tr:nth-child(odd) {
+	 background-color: #fff;
+	}
+	#t01 th {
+	  background-color: black;
+	  color: white;
+	}
+</style>
+</head>
+<body>
+<table id="t01">
+	<tr>
+		<th colspan="4">Side A</th>
+	</tr>
+	<tr>
+		<th>Pin</th>
+		<th>Direction</th>
+		<th>Designation</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>A1</td>
+		<td>Output</td>
+		<td>GND</td>
+	</tr>
+	<tr>
+		<td>A2</td>
+		<td>Output</td>
+		<td>+5V</td>						 
+	</tr>
+	<tr>
+		<td>A3</td>
+		<td>Output</td>
+		<td>Address Bit 8</td>
+	</tr>
+	<tr>
+		<td>A4</td>
+		<td>Output</td>
+		<td>Address Bit 11</td>
+	</tr>
+	<tr>
+		<td>A5</td>
+		<td>Output</td>
+		<td>Address Bit 7</td>
+	</tr>
+	<tr>
+		<td>A6</td>
+		<td>Output</td>
+		<td>Address Bit 12</td>
+	</tr>
+	<tr>
+		<td>A7</td>
+		<td>Output</td>
+		<td>Address Bit 6</td>
+	</tr>
+	<tr>
+		<td>A8</td>
+		<td>Output</td>
+		<td>Address Bit 13</td>
+	</tr>
+	<tr>
+		<td>A9</td>
+		<td>Output</td>
+		<td>Address Bit 5</td>
+	</tr>
+	<tr>
+		<td>A10</td>
+		<td>Output</td>
+		<td>Address Bit 14</td>
+	</tr>
+	<tr>
+		<td>A11</td>
+		<td>Output</td>
+		<td>Address Bit 4</td>
+	</tr>
+	<tr>
+		<td>A12</td>
+		<td>Output</td>
+		<td>Address Bit 15</td>
+	</tr>
+	<tr>
+		<td>A13</td>
+		<td>Output</td>
+		<td>Address Bit 3</td>
+	</tr>
+	<tr>
+		<td>A14</td>
+		<td>Output</td>
+		<td>Address Bit 16</td>
+	</tr>
+	<tr>
+		<td>A15</td>
+		<td>Output</td>
+		<td>Address Bit 2</td>
+	</tr>
+	<tr>
+		<td>A16</td>
+		<td>Output</td>
+		<td>Address Bit 17</td>
+	</tr>
+	<tr>
+		<td>A17</td>
+		<td>Output</td>
+		<td>Address Bit 1</td>
+		<td>This is the first address bit, bit 0 is hardwired to low.</td>
+	</tr>
+	<tr>
+		<td>A18</td>
+		<td>Output</td>
+		<td>GND</td>
+	</tr>
+	<tr>
+		<td>A19</td>
+		<td>Output / Input</td>
+		<td>Data Bit 7</td>
+	</tr>
+	<tr>
+		<td>A20</td>
+		<td>Output / Input</td>
+		<td>Data Bit 0</td>
+	</tr>
+	<tr>
+		<td>A21</td>
+		<td>Output / Input</td>
+		<td>Data Bit 8</td>
+	</tr>
+	<tr>
+		<td>A22</td>
+		<td>Output / Input</td>
+		<td>Data Bit 6</td>
+	</tr>
+	<tr>
+		<td>A23</td>
+		<td>Output / Input</td>
+		<td>Data Bit 1</td>
+	</tr>
+	<tr>
+		<td>A24</td>
+		<td>Output / Input</td>
+		<td>Data Bit 9</td>
+	</tr>
+	<tr>
+		<td>A25</td>
+		<td>Output / Input</td>
+		<td>Data Bit 5</td>
+	</tr>
+	<tr>
+		<td>A26</td>
+		<td>Output / Input</td>
+		<td>Data Bit 2</td>
+	</tr>
+	<tr>
+		<td>A27</td>
+		<td>Output / Input</td>
+		<td>Data Bit 10</td>
+	</tr>
+	<tr>
+		<td>A28</td>
+		<td>Output / Input</td>
+		<td>Data Bit 4</td>
+	</tr>
+	<tr>
+		<td>A29</td>
+		<td>Output / Input</td>
+		<td>Data Bit 3</td>
+	</tr>
+	<tr>
+		<td>A30</td>
+		<td>Output / Input</td>
+		<td>Data Bit 11</td>
+	</tr>
+	<tr>
+		<td>A31</td>
+		<td>Output</td>
+		<td>+5V</td>
+	</tr>
+	<tr>
+		<td>A32</td>
+		<td>Output</td>
+		<td>GND</td>
+	</tr>
+	<tr>
+		<th colspan="4">Side B</th>
+	</tr>
+	<tr>
+		<th>Pin</th>
+		<th>Direction</th>
+		<th>Designation</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>B1</td>
+		<td>Input</td>
+		<td>Left Audio</td>
+		<td>Audio sourced from cartridge, left channel, mixed into output.</td>
+	</tr>
+	<tr>
+		<td>B2</td>
+		<td>Output</td>
+		<td>/MRES</td>
+		<td>Master reset, from system start up.</td>					 
+	</tr>
+	<tr>
+		<td>B3</td>
+		<td>Input</td>
+		<td>Right Audio</td>
+		<td>Audio sourced from cartridge, right channel, mixed into output.</td>
+	</tr>
+	<tr>
+		<td>B4</td>
+		<td>Output</td>
+		<td>Address Bit 9</td>
+	</tr>
+	<tr>
+		<td>B5</td>
+		<td>Output</td>
+		<td>Address Bit 10</td>
+	</tr>
+	<tr>
+		<td>B6</td>
+		<td>Output</td>
+		<td>Address Bit 18</td>
+	</tr>
+	<tr>
+		<td>B7</td>
+		<td>Output</td>
+		<td>Address Bit 19</td>
+	</tr>
+	<tr>
+		<td>B8</td>
+		<td>Output</td>
+		<td>Address Bit 20</td>
+	</tr>
+	<tr>
+		<td>B9</td>
+		<td>Output</td>
+		<td>Address Bit 21</td>
+	</tr>
+	<tr>
+		<td>B10</td>
+		<td>Output</td>
+		<td>Address Bit 22</td>
+	</tr>
+	<tr>
+		<td>B11</td>
+		<td>Output</td>
+		<td>Address Bit 23</td>
+	</tr>
+	<tr>
+		<td>B12</td>
+		<td>Output</td>
+		<td>/YS</td>
+		<td>VDP is currently drawing the backdrop colour.</td>
+	</tr>
+	<tr>
+		<td>B13</td>
+		<td>Output</td>
+		<td>/VSYNC</td>
+		<td>Vertical sync pulse.</td>
+	</tr>
+	<tr>
+		<td>B14</td>
+		<td>Output</td>
+		<td>/HSYNC</td>
+		<td>Horizonal sync pulse.</td>
+	</tr>
+	<tr>
+		<td>B15</td>
+		<td>Output</td>
+		<td>EDCLK</td>
+		<td>External Dot Clock (~13.4 or 10.7 MHz).</td>
+	</tr>
+	<tr>
+		<td>B16</td>
+		<td>Output</td>
+		<td>/CAS0</td>
+		<td>Read or Write on $000000-$DFFFFF region.</td>
+	</tr>
+	<tr>
+		<td>B17</td>
+		<td>Output</td>
+		<td>/CEO</td>
+		<td>Chip Enable for the cartridge. Normally low when accessing $000000-$3FFFFF region.  When expension unit is present then low when accessing $400000-$7FFFFF.</td>
+	</tr>
+	<tr>
+		<td>B18</td>
+		<td>Output</td>
+		<td>/AS</td>
+		<td>Address strobe, address on bus is currently valid and not changing.</td>
+	</tr>
+	<tr>
+		<td>B19</td>
+		<td>Output / Input</td>
+		<td>VCLK</td>
+		<td>68K Clock</td>
+	</tr>
+	<tr>
+		<td>B20</td>
+		<td>Output / Input</td>
+		<td>/DTACK</td>
+		<td>Data acknowledge to 68K.</td>
+	</tr>
+	<tr>
+		<td>B21</td>
+		<td>Output / Input</td>
+		<td>/CAS2</td>
+		<td>Read or Write on $E00000-$FFFFFF region, maybe (Upper 2MB).</td>
+	</tr>
+	<tr>
+		<td>B22</td>
+		<td>Output / Input</td>
+		<td>Data Bit 15</td>
+	</tr>
+	<tr>
+		<td>B23</td>
+		<td>Output / Input</td>
+		<td>Data Bit 14</td>
+	</tr>
+	<tr>
+		<td>B24</td>
+		<td>Output / Input</td>
+		<td>Data Bit 13</td>
+	</tr>
+	<tr>
+		<td>B25</td>
+		<td>Output / Input</td>
+		<td>Data Bit 12</td>
+	</tr>
+	<tr>
+		<td>B26</td>
+		<td>Output / Input</td>
+		<td>/ASEL</td>
+		<td>Read or Write on $000000-$7FFFFF region.</td>
+	</tr>
+	<tr>
+		<td>B27</td>
+		<td>Output</td>
+		<td>/VRES</td>
+		<td>System reset, from front panel switch.</td>
+	</tr>
+	<tr>
+		<td>B28</td>
+		<td>Output</td>
+		<td>/LWR</td>
+		<td>Lower byte WRite, the lower byte on the data lines should be written to the location in the address lines.</td>
+	</tr>
+	<tr>
+		<td>B29</td>
+		<td>Output</td>
+		<td>/UWR</td>
+		<td>Upper byte WRite, the upper byte on the data lines should be written to the location in the address lines.</td>
+	</tr>
+	<tr>
+		<td>B30</td>
+		<td>Input</td>
+		<td>/M3</td>
+		<td>Pulled high in console, cartridge shorts to ground to indicate console should run in Mark 3 (Master System) mode.</td>
+	</tr>
+	<tr>
+		<td>B31</td>
+		<td>Output</td>
+		<td>/TIME</td>
+		<td>Set for r/w at/to $A13000-$A130FF, given the name suggests it might be for a real time clock in the cartridge. This would enable usage as a chip enable on a RTC, using fewer address lines or logic to that RTC. Used in Sonic 3 for SRAM.</td>
+	</tr>
+	<tr>
+		<td>B32</td>
+		<td>Input</td>
+		<td>/CART</td>
+		<td>Pulled high in console, cartridge shorts to ground to indicate presence.</td>
+	</tr>
+</table>
+</body>
+</html>

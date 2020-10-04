@@ -1,0 +1,70 @@
+Side A
+Pin		Direction		Designation			Description
+A1		Output			GND	 
+A2		Output			+5V	 
+A3		Output			Address Bit 8	 
+A4		Output			Address Bit 11	 
+A5		Output			Address Bit 7	 
+A6		Output			Address Bit 12	 
+A7		Output			Address Bit 6	 
+A8		Output			Address Bit 13	 
+A9		Output			Address Bit 5	 
+A10		Output			Address Bit 14	 
+A11		Output			Address Bit 4	 
+A12		Output			Address Bit 15	 
+A13		Output			Address Bit 3	 
+A14		Output			Address Bit 16	 
+A15		Output			Address Bit 2	 
+A16		Output			Address Bit 17	 
+A17		Output			Address Bit 1		This is the first address bit, bit 0 is hardwired to low.
+A18		Output			GND	 
+A19		Output / Input	Data Bit 7	 
+A20		Output / Input	Data Bit 0	 
+A21		Output / Input	Data Bit 8	 
+A22		Output / Input	Data Bit 6	 
+A23		Output / Input	Data Bit 1	 
+A24		Output / Input	Data Bit 9	 
+A25		Output / Input	Data Bit 5	 
+A26		Output / Input	Data Bit 2	 
+A27		Output / Input	Data Bit 10	 
+A28		Output / Input	Data Bit 4	 
+A29		Output / Input	Data Bit 3	 
+A30		Output / Input	Data Bit 11	 
+A31		Output			+5V	 
+A32		Output			GND	 
+
+
+Side B
+Pin		Direction		Designation		Description
+B1		Input			Left Audio		Audio sourced from cartridge, left channel, mixed into output.
+B2		Output			/MRES			Master reset, from system start up.
+B3		Input			Right Audio		Audio sourced from cartridge, right channel, mixed into output.
+B4		Output			Address Bit 9	 
+B5		Output			Address Bit 10	 
+B6		Output			Address Bit 18	 
+B7		Output			Address Bit 19	 
+B8		Output			Address Bit 20	 
+B9		Output			Address Bit 21	 
+B10		Output			Address Bit 22	 
+B11		Output			Address Bit 23	 
+B12		Output			/YS				VDP is currently drawing the backdrop colour.
+B13		Output			/VSYNC			Vertical sync pulse.
+B14		Output			/HSYNC			Horizonal sync pulse.
+B15		Output			EDCLK			External Dot Clock (~13.4 or 10.7 MHz).
+B16		Output			/CAS0			Read or Write on $000000-$DFFFFF region.
+B17		Output			/CEO			Chip Enable for the cartridge. Normally low when accessing $000000-$3FFFFF region.  When expension unit is present then low when accessing $400000-$7FFFFF.
+B18		Output			/AS				Address strobe, address on bus is currently valid and not changing.
+B19		Output			VCLK			68K Clock
+B20		Input			/DTACK			Data acknowledge to 68K.
+B21		Output			/CAS2			Read or Write on $E00000-$FFFFFF region, maybe (Upper 2MB).
+B22		Output / Input	Data Bit 15	 
+B23		Output / Input	Data Bit 14	 
+B24		Output / Input	Data Bit 13	 
+B25		Output / Input	Data Bit 12	 
+B26		Output			/ASEL			Read or Write on $000000-$7FFFFF region
+B27		Output			/VRES			System reset, from front panel switch.
+B28		Output			/LWR			Lower byte WRite, the lower byte on the data lines should be written to the location in the address lines.
+B29		Output			/UWR			Upper byte WRite, the upper byte on the data lines should be written to the location in the address lines.
+B30		Input			/M3				Pulled high in console, cartridge shorts to ground to indicate console should run in Mark 3 (Master System) mode.
+B31		Output			/TIME			Set for r/w at/to $A13000-$A130FF, given the name suggests it might be for a real time clock in the cartridge. This would enable usage as a chip enable on a RTC, using fewer address lines or logic to that RTC. Used in Sonic 3 for SRAM.
+B32		Input			/CART			Pulled high in console, cartridge shorts to ground to indicate presence.
