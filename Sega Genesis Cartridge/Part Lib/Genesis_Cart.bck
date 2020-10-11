@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP cart_edge_conn_double_sided
+D Generic connector, double row, 02x32, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP cart_edge_conn_side_A
 D Generic connector, single row, 01x32, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
