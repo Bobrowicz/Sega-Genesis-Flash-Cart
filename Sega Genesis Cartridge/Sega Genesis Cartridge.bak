@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Sega Genesis Cartridge-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -599,29 +600,29 @@ Entry Wire Line
 Text Label 4905 1000 0    50   ~ 0
 A19
 $Comp
-L Genesis_Cart:my_SST39SF040 U1
+L Sega-Genesis-Cartridge-rescue:my_SST39SF040-Genesis_Cart U1
 U 1 1 60379CD4
 P 6500 3200
 F 0 "U1" H 6500 4681 50  0000 C CNN
 F 1 "my_SST39SF040" H 6500 4590 50  0000 C CNN
-F 2 "SMD_Packages:TSOP32SP" H 6500 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm" H 6500 3500 50  0001 C CNN
 F 3 "" H 6500 3500 50  0001 C CNN
 	1    6500 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Genesis_Cart:my_SST39SF040 U2
+L Sega-Genesis-Cartridge-rescue:my_SST39SF040-Genesis_Cart U2
 U 1 1 603858F4
 P 9500 3200
 F 0 "U2" H 9500 4681 50  0000 C CNN
 F 1 "my_SST39SF040" H 9500 4590 50  0000 C CNN
-F 2 "SMD_Packages:TSOP32SP" H 9500 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm" H 9500 3500 50  0001 C CNN
 F 3 "" H 9500 3500 50  0001 C CNN
 	1    9500 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Genesis_Cart:my_SW_SP3T SW1
+L Sega-Genesis-Cartridge-rescue:my_SW_SP3T-Genesis_Cart SW1
 U 1 1 60392A20
 P 4600 1000
 F 0 "SW1" H 4600 675 50  0000 C CNN
@@ -715,12 +716,12 @@ Bypass capacitors
 Text Notes 2050 6050 0    50   ~ 0
 * External programmer can use ~WE.\n  Console pulls the pin high.
 $Comp
-L Genesis_Cart:cart_edge_conn_double_sided J1
+L Sega-Genesis-Cartridge-rescue:cart_edge_conn_double_sided-Genesis_Cart J1
 U 1 1 605999C4
 P 2900 3500
 F 0 "J1" H 2950 5217 50  0000 C CNN
 F 1 "edge_connector" H 2895 5125 50  0000 C CNN
-F 2 "" H 2900 3500 50  0001 C CNN
+F 2 "Genesis_Cart:Genesis_cart_edge_connector" H 2900 3500 50  0001 C CNN
 F 3 "~" H 2900 3500 50  0001 C CNN
 	1    2900 3500
 	1    0    0    -1  
@@ -878,6 +879,17 @@ Wire Wire Line
 Wire Wire Line
 	1400 1800 1400 1900
 Connection ~ 1400 1900
+$Comp
+L Device:CP C1
+U 1 1 5F98F8C3
+P 1400 2150
+F 0 "C1" H 1518 2196 50  0000 L CNN
+F 1 "47 uF" H 1518 2105 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 1438 2000 50  0001 C CNN
+F 3 "~" H 1400 2150 50  0001 C CNN
+	1    1400 2150
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	8400 4300 8400 5000
 Wire Bus Line
@@ -900,15 +912,4 @@ Wire Bus Line
 	8400 1500 8400 3700
 Wire Bus Line
 	5400 1500 5400 3700
-$Comp
-L Device:CP C1
-U 1 1 5F98F8C3
-P 1400 2150
-F 0 "C1" H 1518 2196 50  0000 L CNN
-F 1 "47 uF" H 1518 2105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1438 2000 50  0001 C CNN
-F 3 "~" H 1400 2150 50  0001 C CNN
-	1    1400 2150
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
