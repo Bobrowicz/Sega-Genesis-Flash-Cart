@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Sega_Genesis_Flash_Cart)(type Legacy)(uri "${KIPRJMOD}/Sega Genesis Flash Cart.lib")(options "")(descr ""))
+)

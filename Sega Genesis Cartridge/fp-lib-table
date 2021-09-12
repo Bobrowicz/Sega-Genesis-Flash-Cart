@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Genesis_Cart)(type KiCad)(uri "${KIPRJMOD}/Part Lib/Genesis_Cart.pretty")(options "")(descr ""))
-)
